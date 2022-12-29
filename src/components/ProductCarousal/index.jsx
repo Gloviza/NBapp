@@ -3,10 +3,10 @@ import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import "./styles.css";
 
-const ProductCarousal = () => {
+const ProductCarousal = ({ carousalData }) => {
   return (
     <>
-      <div id="GYN" className="background">
+      <div className="background">
         <div>
           <Carousel
             prevLabel={""}
@@ -15,21 +15,18 @@ const ProductCarousal = () => {
             wrap={false}
             touch={false}
           >
-            <Carousel.Item>
-              <img className="carousal-image" src="p1.jpg" alt="Walart GYN" />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img className="carousal-image" src="p1.jpg" alt="Walart GYN" />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img className="carousal-image" src="p1.jpg" alt="Walart GYN" />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img className="carousal-image" src="p1.jpg" alt="Walart GYN" />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img className="carousal-image" src="p1.jpg" alt="Walart GYN" />
-            </Carousel.Item>
+            {carousalData.map(({ imgPath, alternateName }) => {
+              return (
+                <Carousel.Item>
+                  <img
+                    className="carousal-image"
+                    src={imgPath}
+                    alt={alternateName}
+                    key={alternateName}
+                  />
+                </Carousel.Item>
+              );
+            })}
           </Carousel>
         </div>
       </div>
