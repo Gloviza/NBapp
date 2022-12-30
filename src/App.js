@@ -12,10 +12,14 @@ import {
 import ProductCarousal from "./components/ProductCarousal";
 import Navbar from "./components/Navbar/Navbar";
 import {
+  homeCarousalData,
   pediatricCarousalData,
-  phyCarousalData,
-  gynCarousalData,
-  surCarousalData,
+  gynP1CarousalData,
+  gynP2CarousalData,
+  phyP1CarousalData,
+  phyP2CarousalData,
+  surP1CarousalData,
+  surP2CarousalData,
 } from "./constants/CarousalData";
 
 function App() {
@@ -26,23 +30,43 @@ function App() {
         {/* <Route exact path="/" component={WalartPediatric} /> */}
         <Route
           exact
+          path="/"
+          element={<ProductCarousal carousalData={homeCarousalData} />}
+        />
+        <Route
+          exact
           path="/Pediatric"
           element={<ProductCarousal carousalData={pediatricCarousalData} />}
         />
         <Route
           exact
-          path="/GYN"
-          element={<ProductCarousal carousalData={gynCarousalData} />}
+          path="/Gyn-P1"
+          element={<ProductCarousal carousalData={gynP1CarousalData} />}
         />
         <Route
           exact
-          path="/PHY"
-          element={<ProductCarousal carousalData={phyCarousalData} />}
+          path="/Gyn-P2"
+          element={<ProductCarousal carousalData={gynP2CarousalData} />}
         />
         <Route
           exact
-          path="/SUR"
-          element={<ProductCarousal carousalData={surCarousalData} />}
+          path="/Phy-P1"
+          element={<ProductCarousal carousalData={phyP1CarousalData} />}
+        />
+        <Route
+          exact
+          path="/Phy-P2"
+          element={<ProductCarousal carousalData={phyP2CarousalData} />}
+        />
+        <Route
+          exact
+          path="/Sur-P1"
+          element={<ProductCarousal carousalData={surP1CarousalData} />}
+        />
+        <Route
+          exact
+          path="/Sur-P2"
+          element={<ProductCarousal carousalData={surP2CarousalData} />}
         />
         {/* <Navigate to="/Pediatric" /> */}
       </Routes>

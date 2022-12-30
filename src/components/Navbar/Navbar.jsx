@@ -10,17 +10,29 @@ const Navbar = () => {
 
   return (
     <Menu width={"auto"}>
+      <Link className="menu-item" to="/">
+        Home
+      </Link>
       <Link className="menu-item" to="/Pediatric">
         Pediatric
       </Link>
-      <Link className="menu-item" to="/GYN">
-        GYN
+      <Link className="menu-item" to="/Gyn-P1">
+        Gyn-P1
       </Link>
-      <Link className="menu-item" to="/PHY">
-        PHY
+      <Link className="menu-item" to="/Gyn-P2">
+        Gyn-P2
       </Link>
-      <Link className="menu-item" to="/SUR">
-        SUR
+      <Link className="menu-item" to="/Phy-P1">
+        Phy-P1
+      </Link>
+      <Link className="menu-item" to="/Phy-P2">
+        Phy-P2
+      </Link>
+      <Link className="menu-item" to="/Sur-P1">
+        Sur-P1
+      </Link>
+      <Link className="menu-item" to="/Sur-P2">
+        Sur-P2
       </Link>
 
       {/* <a onClick={ this.showSettings } className="menu-item--small" href="">Settings</a> */}

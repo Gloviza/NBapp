@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 // import "bootstrap/dist/css/bootstrap.css";
 import Carousel from "react-bootstrap/Carousel";
 import "./styles.css";
@@ -15,14 +15,14 @@ const ProductCarousal = ({ carousalData }) => {
             wrap={false}
             touch={false}
           >
-            {carousalData.map(({ imgPath, alternateName }) => {
+            {carousalData.map(({ imgPath, alternateName, id }) => {
               return (
                 <Carousel.Item>
                   <img
                     className="carousal-image"
                     src={imgPath}
                     alt={alternateName}
-                    key={alternateName}
+                    key={id}
                   />
                 </Carousel.Item>
               );
