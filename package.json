@@ -1,6 +1,6 @@
 {
   "name": "nbapp",
-  "homepage": "https://Gloviza.github.io/",
+  "homepage": "https://Gloviza.github.io/nbapp/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -16,7 +16,7 @@
     "react-router": "^6.6.1",
     "react-router-dom": "^6.6.1",
     "react-router-hash-link": "^2.4.3",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^4.0.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -43,23 +43,6 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
-    ]
-  },
-  "babel": {
-    "presets": [
-      [
-        "@babel/preset-env",
-        {
-          "targets": {
-            "esmodules": true
-          }
-        }
-      ],
-      "@babel/preset-react",
-      "@babel/preset-flow"
-    ],
-    "plugins": [
-      "@babel/plugin-proposal-class-properties"
     ]
   }
 }
