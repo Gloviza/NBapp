@@ -1,11 +1,13 @@
 var CACHE_NAME = "pwa-walart";
 var urlsToCache = [
   "/",
-  // "Walart/Pediatric",
-  // "Walart/GYN",
-  // "/Walart/PHY",
-  // "/Walart/SUR",
-  // "/completed",
+  "/Pediatric",
+  "/Gyn-P1",
+  "/Gyn-P2",
+  "/Phy-P1",
+  "/Phy-P2",
+  "/Sur-P1",
+  "/Sur-P2",
 ];
 
 // Install a service worker
