@@ -1,13 +1,12 @@
-var CACHE_NAME = "pwa-walart";
+var CACHE_NAME = "pwa-nbapp";
 var urlsToCache = [
-  "/nbapp/",
-  "/nbapp/Pediatric",
-  "/nbapp/Gyn-P1",
-  "/nbapp/Gyn-P2",
-  "/nbapp/Phy-P1",
-  "/nbapp/Phy-P2",
-  "/nbapp/Sur-P1",
-  "/nbapp/Sur-P2",
+  "/",
+  "/static/css/*.css",
+  "/static/css/**/*.css",
+  "/static/js/*.js",
+  "/static/js/**/*.js",
+  "/static/media/*.jpg",
+  "/static/media/**/*.jpg",
 ];
 
 // Install a service worker
